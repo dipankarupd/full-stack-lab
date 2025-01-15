@@ -1,0 +1,59 @@
+/* Ensure the body occupies the full viewport and centers content */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling for the displayed text card */
+.display-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 400px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+
+/* Styling for the textarea */
+.textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+  resize: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  background-color: #333; /* Dark background */
+  color: white; /* White text for input */
+}
+
+/* Placeholder styling for the textarea */
+.textarea::placeholder {
+  color: #ccc; /* Lighter color for placeholder text */
+  opacity: 1;
+}
